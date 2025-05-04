@@ -1,0 +1,14 @@
+- id: smartphone-x
+  title: Smartphone X
+  category: smartphones
+  images:
+    - /assets/images/products/smartphone-x-1.jpg
+    - /assets/images/products/smartphone-x-2.jpg
+  amazon_link: https://amazon.com/dp/B00AQL8VU4
+- id: headphones-y
+  title: Headphones Y
+  category: headphones
+  images:
+    - /assets/images/products/headphones-y-1.jpg
+    - /assets/images/products/headphones-y-2.jpg
+  amazon_link: https://amazon.com/dp/B00AQL8VU4
