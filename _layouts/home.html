@@ -1,12 +1,8 @@
-<section class="hero relative">
-  <div id="hero-slider" class="w-full h-96 overflow-hidden">
-    {% for slide in site.data.settings.hero_slides %}
-      <div class="slide absolute w-full h-full hidden">
-        <img src="{{ slide.image }}" alt="{{ slide.caption }}" class="w-full h-full object-cover">
-        <div class="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold bg-black bg-opacity-50">
-          {{ slide.caption }}
-        </div>
-      </div>
+<section id="reviews" class="py-12">
+  <h2 class="text-3xl font-bold text-center mb-8">Featured Reviews</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {% for review in site.reviews limit:3 %}
+      {% include review-card.html title=review.title image=review.images.first url=review.url %}
     {% endfor %}
   </div>
 </section>
