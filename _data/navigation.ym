@@ -1,0 +1,12 @@
+- title: Home
+  url: /
+- title: Reviews
+  url: /reviews
+- title: Blog
+  url: /blog
+- title: Categories
+  url: /#categories
+- title: Search
+  url: /search
+- title: Contact
+  url: /contact
