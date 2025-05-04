@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article class="bg-white p-6 rounded-lg shadow-lg">
+  <h1 class="text-4xl font-bold mb-4">{{ page.title }}</h1>
+  <div class="gallery grid grid-cols-2 gap-4 mb-6">
+    {% for image in page.images %}
+      <a href="{{ image }}" data-lightbox="review" class="block">
+        <img src="{{ image }}" alt="{{ page.title }}" class="w-full h-40 object-cover rounded">
+      </a>
+    {% endfor %}
+  </div>
+  {{ content }}
+  <a href="{{ page.amazon_link }}" class="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Buy on Amazon</a>
+</article>
