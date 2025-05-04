@@ -1,9 +1,15 @@
-<div class="filters mb-6">
-  <input type="text" id="search-input" placeholder="Search products..." class="p-2 border rounded">
-  <select id="category-filter" class="p-2 border rounded ml-2">
-    <option value="">All Categories</option>
-    {% for cat in site.data.categories %}
-      <option value="{{ cat.slug }}">{{ cat.name }}</option>
-    {% endfor %}
-  </select>
+<div class="filters mb-6 relative">
+  <div class="relative inline-block">
+    <img src="/assets/images/icons/search-icon.svg" alt="Search" class="absolute left-2 top-1/2 transform -translate-y-1/2 h-5 w-5">
+    <input type="text" id="search-input" placeholder="Search products..." class="p-2 pl-8 border rounded w-64">
+  </div>
+  <div class="relative inline-block ml-2">
+    <img src="/assets/images/icons/filter-icon.svg" alt="Filter" class="absolute left-2 top-1/2 transform -translate-y-1/2 h-5 w-5">
+    <select id="category-filter" class="p-2 pl-8 border rounded">
+      <option value="">All Categories</option>
+      {% for cat in site.data.categories %}
+        <option value="{{ cat.slug }}">{{ cat.name }}</option>
+      {% endfor %}
+    </select>
+  </div>
 </div>
