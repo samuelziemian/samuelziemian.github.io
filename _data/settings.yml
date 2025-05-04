@@ -5,3 +5,7 @@ hero_slides:
     caption: "Top Headphones"
   - image: /assets/images/hero/hero-smarthome.jpg
     caption: "Smart Home Tech"
+  - image: /assets/images/hero/hero-laptop.jpg
+    caption: "Best Laptops"
+  - image: /assets/images/hero/hero-gadgets.jpg
+    caption: "Latest Gadgets"
