@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<h1 class="text-4xl font-bold mb-8">{{ page.title }}</h1>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+  {% for review in site.reviews %}
+    {% if review.category == page.slug %}
+      {% include review-card.html title=review.title image=review.image url=review.url %}
+    {% endif %}
+  {% endfor %}
+</div>
