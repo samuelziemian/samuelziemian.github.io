@@ -1,3 +1,29 @@
 ---
 ---
-@import "custom";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/assets/fonts/roboto-regular.woff2') format('woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('/assets/fonts/roboto-bold.woff2') format('woff2');
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero .slide {
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
