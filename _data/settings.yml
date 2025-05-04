@@ -1,0 +1,7 @@
+hero_slides:
+  - image: /assets/images/hero/hero-smartphone.jpg
+    caption: "Explore Smartphones"
+  - image: /assets/images/hero/hero-headphones.jpg
+    caption: "Top Headphones"
+  - image: /assets/images/hero/hero-smarthome.jpg
+    caption: "Smart Home Tech"
