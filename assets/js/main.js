@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Hero Slider
   const slides = document.querySelectorAll('#hero-slider .slide');
   let current = 0;
   function nextSlide() {
@@ -9,7 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   setInterval(nextSlide, 5000);
   slides[current].classList.remove('hidden');
-
+  // ... (rest of the search code follows)
+});
   // Search with Fuse.js
   const reviews = [
     {% for review in site.reviews %}
