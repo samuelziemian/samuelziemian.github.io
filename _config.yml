@@ -1,5 +1,39 @@
 title: Tech Gadget Reviews
-description: Your source for tech product reviews and buying guides.
-theme: jekyll-theme-minimal
-show_downloads: false
-logo: /logo.png
+description: In-depth reviews, guides, and trends for the latest tech gadgets.
+baseurl: ""
+url: "https://samuelziemian.github.io"
+logo: /assets/images/logo.png
+theme: null
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+collections:
+  reviews:
+    output: true
+    permalink: /reviews/:name
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title
+  categories:
+    output: true
+    permalink: /category/:name
+defaults:
+  - scope:
+      path: ""
+      type: "reviews"
+    values:
+      layout: "review"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "categories"
+    values:
+      layout: "category"
+sass:
+  sass_dir: _sass
+  style: compressed
