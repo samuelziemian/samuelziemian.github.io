@@ -1,0 +1,9 @@
+<div class="filters mb-6">
+  <input type="text" id="search-input" placeholder="Search products..." class="p-2 border rounded">
+  <select id="category-filter" class="p-2 border rounded ml-2">
+    <option value="">All Categories</option>
+    {% for cat in site.data.categories %}
+      <option value="{{ cat.slug }}">{{ cat.name }}</option>
+    {% endfor %}
+  </select>
+</div>
