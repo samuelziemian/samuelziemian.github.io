@@ -1,0 +1,9 @@
+- name: Smartphones
+  slug: smartphones
+  image: /assets/images/hero/hero-smartphone.jpg
+- name: Headphones
+  slug: headphones
+  image: /assets/images/hero/hero-headphones.jpg
+- name: Smart Home
+  slug: smart-home
+  image: /assets/images/hero/hero-smarthome.jpg
